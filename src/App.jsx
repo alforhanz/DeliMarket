@@ -5,6 +5,8 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import SendIcon from '@mui/icons-material/Send';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
+import Inicio from './views/Inicio';
 import Productos from './views/Productos';
 import "./App.css";
 
@@ -41,7 +43,7 @@ function App() {
     </Router>
     
       {/* Barra de navegación superior */}
-      <AppBar position="static">
+      {/* <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
             DeliMarket
@@ -50,7 +52,7 @@ function App() {
           <Button color="inherit">Productos</Button>
           <Button color="inherit">Carrito</Button>
         </Toolbar>
-      </AppBar>
+      </AppBar> */}
 
       {/* Contenido principal */}
       <Container style={{ padding: "2rem" }}>
@@ -70,10 +72,10 @@ function App() {
         <Button variant="contained" endIcon={<SendIcon />} onClick={() => setCount(count + 1)}>
           count is {count}
         </Button>
-
+{/* 
         <Typography variant="body1" sx={{ marginTop: "1rem" }}>
           Edita <code>src/App.jsx</code> y guarda para probar HMR.
-        </Typography>
+        </Typography> */}
       </Container>
       
     </>

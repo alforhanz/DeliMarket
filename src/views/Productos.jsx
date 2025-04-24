@@ -27,6 +27,13 @@ const productosMock = [
     precio: 3.25,
     imagen: cafeImg,
   },
+  {
+    id: 4,
+    nombre: 'Café Premium',
+    descripcion: 'Café arábica molido.',
+    precio: 3.25,
+    imagen: cafeImg,
+  },
 ];
 
 function Productos() {
